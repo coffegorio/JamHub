@@ -11,7 +11,7 @@ import SwiftUI
 struct JamHubApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GreetingsView()
         }
     }
 }
