@@ -9,7 +9,45 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack() {
+            
+            HStack(spacing: 20) {
+                Button{} label: {
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 70, height: 70)
+                        .foregroundStyle(.black)
+                }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Привет,")
+                            .fontWeight(.medium)
+                        Text("Имя!")
+                            .fontWeight(.medium)
+                            .padding(4)
+                            .background(Color(hex: "856EE7"))
+                            .cornerRadius(5, corners: [.allCorners])
+                            .foregroundStyle(.white)
+                    }
+                    Text("Добрый вечер")
+                }
+                
+                Spacer()
+                
+                Button {} label: {
+                    Image(systemName: "bell")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 25, height: 25)
+                        .foregroundStyle(.black)
+                }
+            }
+            
+            Spacer()
+            
+        }
+        .padding(30)
     }
 }
 
